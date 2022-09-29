@@ -1,21 +1,20 @@
-<template>
+<template >
 <div class="container" style="background-color: blanchedalmond; max-width:600px">
-  <h2 class="text-center mt-5"> My Todo List</h2>
+  <h2 class="text-center mt-5"> 待辦事項</h2>
   
 <!--Input-->
 <div class="d-flex mt-5" >
-  <input v-model="task"  type="text" placeholder="Enter task" class="w-100 form-control">
-  <button @click="submitTask"  class="btn btn-warning rounded-0">SUBMIT</button>
+  <input v-model="task"  type="text" placeholder="輸入待辦事項" class="w-100 form-control">
+  <button @click="submitTask"  class="btn btn-warning rounded-0">提交</button>
 </div>
- 
 <!--Task table-->
 <table class="table table-bordered mt-5">
   <thead>
     <tr>
-      <th scope="col" style="width: 400px;">Task</th>
+      <th scope="col" style="width: 400px;">任務</th>
       <!-- <th scope="col" style="width:120px">Status</th> -->
-      <th scope="col" class="text-center" style="width: 100px;">Edit</th>
-      <th scope="col" class="text-center" style="width: 100px;">Delete</th>
+      <th scope="col" class="text-center" style="width: 100px;">編輯</th>
+      <th scope="col" class="text-center" style="width: 100px;">刪除</th>
     </tr>
   </thead>
   <tbody>
@@ -58,13 +57,13 @@ export default {
 
       tasks: [
         {
-          name:'Groceries',
+          name:'採買日用品',
         },
          {
-          name:'Laundry',
+          name:'洗衣服',
         },
         {
-          name:'Clean the house',
+          name:'打掃廚房',
         },
       ],
     };
@@ -117,7 +116,6 @@ editTask(index){
 </script>
 
 <style scoped>
-
 
 
 
